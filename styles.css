@@ -403,6 +403,12 @@ body {
 	border-radius: 40px;
 	margin-top: 20px;
 }
+.founder-card-bottom {
+	display: inline-grid;
+	justify-content: center;
+	text-align: center;
+	margin-top: 20px;
+}
 .main-heading-container3 {
 	font-family: 'Dancing Script', cursive;
 }
