@@ -1,9 +1,10 @@
 * {
 	box-sizing: border-box;
-	font-family: 'Permanent Marker', cursive;
+	/* font-family: 'Permanent Marker', cursive; */
 }
 
 body {
+	background-color: #464646;
 	margin: 0;
 	padding: 0;
 }
@@ -52,8 +53,6 @@ body {
 }
 
 .custom-navbar-links li:hover {
-	/* background-color: #555; */
-	/* background-color: #595959; */
 	background-color: #181818;
 	-moz-box-shadow: 0 0 25px #ccc;
 	-webkit-box-shadow: 0 0 25px #ccc;
@@ -185,12 +184,15 @@ body {
 	background-size: cover;
 	cursor: pointer;
 }
+.logoHover {
+	cursor: pointer;
+}
 @media (max-width: 1000px) {
 	.chalaamLogo {
 		display: none;
 	}
 }
-.chalaamLogo:hover {
+.logoHover:hover {
 	transition: 1s ease;
 	-moz-box-shadow: 0 0 25px #ccc;
 	-webkit-box-shadow: 0 0 25px #ccc;
@@ -246,6 +248,8 @@ body {
 
 /* ------------------------------------------------------------------------------------------------- */
 .container2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 	background-image: linear-gradient(
 			to right bottom,
 			rgba(102, 36, 19, 0.5),
@@ -255,7 +259,7 @@ body {
 	margin: 0;
 	width: 100%;
 	height: 100%;
-	display: flex;
+
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -264,36 +268,27 @@ body {
 }
 /* ------------------------------------------------------------------------------------------------- */
 .template1 {
-	width: 250px;
-	height: auto;
-
-	display: flex;
-	position: absolute;
-
+	width: 220px;
+	height: 220px;
+	justify-content: left;
 	border-radius: 100%;
 
 	background-image: url(images/IFMA.png);
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
+
 	background-size: cover;
 	transition: 1s ease;
+	margin-left: 20%;
 }
-.template1:hover {
-	-webkit-transform: scale(1.2);
-	-ms-transform: scale(1.2);
-	transform: scale(1.2);
-	transition: 1s ease;
-	-moz-box-shadow: 0 0 25px #ccc;
-	-webkit-box-shadow: 0 0 25px #ccc;
-	box-shadow: 0 0 25px #ccc;
+
+.template1Div {
+	justify-content: left;
 }
 .template2 {
 	width: 220px;
-	height: auto;
+	height: 220px;
 	background-color: blue;
-	display: flex;
-	position: absolute;
+	justify-content: center;
+
 	border-radius: 100%;
 	background-image: url(images/alex-harmuth-R1ODafbCoIY-unsplash.jpg);
 	-webkit-background-size: cover;
@@ -302,20 +297,15 @@ body {
 	background-size: cover;
 	transition: 1s ease;
 }
-.template2:hover {
-	-webkit-transform: scale(1.2);
-	-ms-transform: scale(1.2);
-	transform: scale(1.2);
-	transition: 1s ease;
-	-moz-box-shadow: 0 0 25px #ccc;
-	-webkit-box-shadow: 0 0 25px #ccc;
-	box-shadow: 0 0 25px #ccc;
+.template2Div {
+	margin-left: 40%;
+	margin-right: 25%;
 }
 .template3 {
+	margin-top: -22%;
 	width: 220px;
 	height: 220px;
-	display: flex;
-	position: absolute;
+	justify-content: right;
 	border-radius: 100%;
 	background-image: url(images/pablo-rebolledo-h8sl-oNcat0-unsplash.jpg);
 	-webkit-background-size: cover;
@@ -323,20 +313,13 @@ body {
 	-o-background-size: cover;
 	background-size: cover;
 }
-.template3:hover {
-	-webkit-transform: scale(1.2);
-	-ms-transform: scale(1.2);
-	transform: scale(1.2);
-	transition: 1s ease;
-	-moz-box-shadow: 0 0 25px #ccc;
-	-webkit-box-shadow: 0 0 25px #ccc;
-	box-shadow: 0 0 25px #ccc;
+.template3Div {
+	justify-content: right;
+	float: right;
 }
 .template4 {
 	width: 400px;
-	height: auto;
-	display: flex;
-	position: absolute;
+	height: 120%;
 
 	background-image: url(images/DarkBricks.jpg);
 	-webkit-background-size: cover;
@@ -347,17 +330,20 @@ body {
 	/* background: transparent; */
 	box-shadow: 10px 10px 5px black;
 }
+.container2Template4Div {
+	margin: 20%;
+}
 .template4-heading-custom {
 	color: White;
 	font-family: 'Dancing Script', sans-serif;
 	font-size: 3rem;
 	text-align: center;
 	width: 100%;
-	position: absolute;
+	height: auto;
 }
 .template4-paragraph-custom {
 	text-align: center;
-	position: absolute;
+
 	width: 100%;
 	top: 100px;
 
@@ -422,7 +408,7 @@ body {
 }
 
 .founder-page {
-	margin-top: 30px;
+	margin-top: 20px;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 }
@@ -430,9 +416,7 @@ body {
 .founder-left {
 	width: 250px;
 	height: 350px;
-	display: grid;
-	margin-left: auto;
-	margin-right: auto;
+
 	background-image: url(images/Kru1.jpeg);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -451,10 +435,9 @@ body {
 }
 .founder-right {
 	width: 250px;
-	margin-left: auto;
-	margin-right: auto;
+
 	height: 350px;
-	display: grid;
+
 	background-image: url(images/Sheldons-pic.jpg);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -473,8 +456,7 @@ body {
 }
 .founder-center {
 	background-image: url(images/DarkBricks.jpg);
-	width: 620px;
-	height: 360px;
+
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -485,7 +467,7 @@ body {
 .founder-center-paragraph {
 	margin-top: 20px;
 }
-#founder-text {
+.founder-text {
 	color: white;
 	font-weight: lightweight;
 	letter-spacing: 2px;
@@ -515,7 +497,7 @@ body {
 	background-size: cover;
 	margin: 0;
 	width: 100%;
-	height: 110vh;
+	height: 100%;
 
 	display: flex;
 	-webkit-background-size: cover;
@@ -562,10 +544,7 @@ body {
 	border-radius: 100%;
 	width: 180px;
 	height: 180px;
-	/* background-size: cover; */
-
 	margin: 12px;
-
 	border-style: solid;
 	border: 20px;
 }
@@ -580,6 +559,7 @@ body {
 	font-size: 2.2rem;
 	font-weight: 500;
 	color: orange;
+	font-family: 'Permanent Marker', cursive;
 }
 
 .testimonial-text-template {
@@ -610,7 +590,6 @@ em {
 	background-image: url(images/jonathan-tomas-xOtJxM76zO0-unsplash.jpg);
 	-webkit-background-size: cover;
 
-	/* background-image:  url(images/Muay-Thai-background.jpg); */
 	margin: 0;
 	width: 100%;
 	height: 100%;
@@ -661,11 +640,13 @@ em {
 }
 .bottom-paragraph {
 	font-size: 40px;
-	text-align: center;
+
 	color: orange;
+	font-family: 'Permanent Marker', cursive;
 }
-#footer {
-	margin: auto;
+.footer {
+	text-align: center;
+
 	text-align: center;
 
 	font-size: 1.2rem;
@@ -673,42 +654,18 @@ em {
 	font-weight: 300;
 }
 footer {
-	/* background-image: url(images/DarkBricks.jpg); */
 	background-color: #464646;
-	/* width: 100%; */
-	height: 100%;
 }
 
+.contact:hover {
+	color: orange;
+	cursor: pointer;
+}
 ::before {
 	box-sizing: border-box;
 }
-.address:hover {
-	color: orange;
-	cursor: pointer;
-}
-.contactNumber:hover {
-	color: orange;
-	cursor: pointer;
-}
-.emailAddress:hover {
-	color: orange;
-	cursor: pointer;
-}
-.websiteAddress:hover {
-	color: orange;
-	cursor: pointer;
-}
+
 .bottom-paragraph:hover {
 	color: yellow;
 	cursor: pointer;
-}
-
-.CovidPic {
-	background-image: url(images/Covid.jpg);
-
-	align-self: center;
-	background: cover;
-	margin: 0;
-	width: 100%;
-	height: 100%;
 }
