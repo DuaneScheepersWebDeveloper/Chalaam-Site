@@ -227,11 +227,9 @@ body {
 @media (max-width: 500px) {
 	.headingBar {
 		position: absolute;
-		margin-right: 0;
-		margin-top: 120px;
 	}
 	.mainHeadingText {
-		font-size: 110%;
+		font-size: 40px;
 	}
 	.subHeadingText {
 		margin: auto;
@@ -431,6 +429,7 @@ body {
 	border-radius: 60px;
 }
 .founder-left:hover {
+	cursor: pointer;
 	-webkit-transform: scale(1);
 	-ms-transform: scale(1);
 	transform: scale(1);
@@ -441,9 +440,7 @@ body {
 }
 .founder-right {
 	width: 250px;
-
 	height: 350px;
-
 	background-image: url(images/Sheldons-pic.jpg);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -452,6 +449,7 @@ body {
 	border-radius: 60px;
 }
 .founder-right:hover {
+	cursor: pointer;
 	-webkit-transform: scale(1);
 	-ms-transform: scale(1);
 	transform: scale(1);
@@ -487,8 +485,11 @@ body {
 }
 
 @media (max-width: 500px) {
-	.container3 {
+	.founder-right {
 		display: none;
+	}
+	.founder-page {
+		display: grid;
 	}
 }
 /* ------------------------------------------------------------------------------------------------- */
@@ -652,14 +653,12 @@ em {
 }
 .footer {
 	text-align: center;
-
-	text-align: center;
-
 	font-size: 1.2rem;
 	color: white;
 	font-weight: 300;
 }
 footer {
+	height: 70%;
 	background-color: #464646;
 }
 
