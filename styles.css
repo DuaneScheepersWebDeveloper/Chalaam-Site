@@ -540,7 +540,9 @@ footer {
 	height: auto;
 	background-color: #464646;
 }
-
+.address {
+	padding-top: 15px;
+}
 .contact:hover {
 	color: orange;
 	cursor: pointer;
