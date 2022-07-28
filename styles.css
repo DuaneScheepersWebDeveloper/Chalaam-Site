@@ -15,108 +15,6 @@ body {
 
 /* ------------------------------------------------------------------------------------------------- */
 /* This is the navbar */
-
-.custom-navbar {
-	justify-content: space-between;
-	z-index: 1;
-	background: transparent;
-	/* background-image: url(images/DarkBricks.jpg); */
-	color: white;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-
-@media (max-width: 1000px) {
-	.custom-brand-title {
-		display: none;
-	}
-}
-.custom-navbar-links ul {
-	margin: 0;
-	padding: 0;
-	display: flex;
-}
-.custom-navbar ul {
-	justify-content: right;
-}
-.custom-navbar-links li {
-	list-style: none;
-}
-
-.custom-navbar-links li a {
-	text-decoration: none;
-	color: orange;
-	text-shadow: red 1px 1px;
-	padding: 1rem;
-	display: block;
-	font-family: 'Permanent Marker', cursive;
-	font-weight: bold;
-	letter-spacing: 2px;
-}
-
-.custom-navbar-links li:hover {
-	background-color: #181818;
-	-moz-box-shadow: 0 0 25px #ccc;
-	-webkit-box-shadow: 0 0 25px #ccc;
-	box-shadow: 0 0 25px #ccc;
-	border-radius: 20px;
-}
-
-.custom-toggle-button {
-	position: absolute;
-	top: 0.75rem;
-	right: 1rem;
-	display: none;
-	flex-direction: column;
-	justify-content: space-between;
-	width: 30px;
-	height: 21px;
-}
-
-.custom-toggle-button .bar {
-	height: 3px;
-	width: 100%;
-	background-color: orange;
-	border-radius: 10px;
-}
-@media (max-width: 1000px) {
-	.custom-toggle-button {
-		display: flex;
-	}
-
-	.custom-navbar-links {
-		display: none;
-		width: 100%;
-		/* align:right; */
-	}
-
-	.custom-navbar {
-		background-image: url(images/DarkBricks.jpg);
-		flex-direction: column;
-		align-items: flex-start;
-	}
-	.custom-navbar-links ul {
-		flex-direction: column;
-		width: 100%;
-	}
-	.custom-navbar-links li {
-		text-align: center;
-	}
-	.custom-navbar-links li a {
-		padding: 0.5rem 1rem;
-	}
-	.custom-navbar-links.active {
-		display: flex;
-	}
-}
-
-@media (max-width: 1000px) {
-	li .about-bar {
-		display: none;
-	}
-}
 /* ------------------------------------------------------------------------------------------------- */
 /* This is my intro page */
 /*-------------------Container 1-------------------------------------------------------------------------*/
@@ -191,11 +89,7 @@ body {
 .logoHover {
 	cursor: pointer;
 }
-@media (max-width: 1000px) {
-	.chalaamLogo {
-		display: none;
-	}
-}
+
 .logoHover:hover {
 	transition: 1s ease;
 	-moz-box-shadow: 0 0 25px #ccc;
@@ -244,7 +138,8 @@ body {
 		background-image: url(images/timothy-eberly-C7ax3RF9FFo-unsplash.jpg);
 	}
 	.chalaamLogo {
-		background-image: none;
+		width: 160px;
+		height: 160px;
 	}
 }
 
@@ -600,7 +495,16 @@ em {
 /* ------------------------------------------------------------------------------------------------- */
 .social-icon {
 	font-size: 3rem;
-	margin: 20px 10px;
+	color: white;
+	border-radius: 10px;
+	background: radial-gradient(
+		circle at 30% 107%,
+		#fdf497 0%,
+		#fdf497 5%,
+		#fd5949 45%,
+		#d6249f 60%,
+		#285aeb 90%
+	);
 }
 .social-icon:hover {
 	cursor: pointer;
