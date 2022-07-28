@@ -4,7 +4,11 @@
 }
 
 body {
-	background-color: #464646;
+	background-image: url(images/DarkBricks.jpg);
+	background-size: cover;
+	scroll-behavior: smooth;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 	margin: 0;
 	padding: 0;
 }
@@ -370,7 +374,7 @@ body {
 	background-image: url(images/grey-background.jpg);
 	margin: 0;
 	width: 100%;
-	height: 100%;
+	height: auto;
 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -386,20 +390,13 @@ body {
 	/* align:center; */
 }
 .founder-card {
-	display: inline-grid;
+	display: flex;
 	justify-content: center;
 	text-align: center;
 	line-height: 1.8;
-	font-size: 25px;
+	font-size: 2rem;
 	color: white;
 	font-weight: 300;
-	background-image: url(images/DarkBricks.jpg);
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	border-radius: 40px;
-	margin-top: 20px;
 }
 .founder-card-bottom {
 	display: inline-grid;
@@ -413,6 +410,7 @@ body {
 
 .founder-page {
 	margin-top: 20px;
+
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 }
@@ -465,8 +463,9 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	border-radius: 60px;
+	border-radius: 20px;
 	text-align: center;
+	margin: 20px;
 }
 .founder-center-paragraph {
 	margin-top: 20px;
@@ -489,19 +488,28 @@ body {
 		display: none;
 	}
 	.founder-page {
-		display: grid;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-flow: wrap;
+		font-size: 15px;
+	}
+	.founder-center-heading {
+		font-size: 1.5rem;
+	}
+	.founder-center-subHeading {
+		font-size: 1.5rem;
+	}
+	.founder-center-paragraph {
+		font-size: 14px;
+	}
+
+	.founder-card {
+		font-size: 1.5rem;
 	}
 }
 /* ------------------------------------------------------------------------------------------------- */
 .container4 {
-	background-image: linear-gradient(
-			to right bottom,
-			rgba(102, 36, 19, 0.5),
-			rgba(0, 0, 4, 0.5)
-		),
-		url(images/Background-carousel.jpg);
-
-	background-size: cover;
 	margin: 0;
 	width: 100%;
 	height: 100%;
@@ -523,9 +531,6 @@ body {
 		margin-bottom: 40px;
 	}
 
-	.main-heading-container3 {
-		font-size: 50%;
-	}
 	em {
 		font-weight: 600;
 	}
@@ -593,41 +598,8 @@ em {
 }
 
 /* ------------------------------------------------------------------------------------------------- */
-.container5 {
-	background-image: url(images/jonathan-tomas-xOtJxM76zO0-unsplash.jpg);
-	-webkit-background-size: cover;
-
-	margin: 0;
-	width: 100%;
-	height: 100%;
-	align-items: center;
-	justify-content: center;
-	display: flex;
-
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	border-style: left right solid;
-}
-.card-body {
-	text-align: center;
-	font-size: 1.7rem;
-	background-color: grey;
-}
-.pricing-text:hover {
-	color: yellow;
-	cursor: pointer;
-}
-.card {
-	border-radius: 40%;
-}
-.card-header:hover {
-	color: red;
-	cursor: pointer;
-}
-/* ------------------------------------------------------------------------------------------------- */
 .social-icon {
+	font-size: 3rem;
 	margin: 20px 10px;
 }
 .social-icon:hover {
@@ -658,7 +630,7 @@ em {
 	font-weight: 300;
 }
 footer {
-	height: 70%;
+	height: auto;
 	background-color: #464646;
 }
 
