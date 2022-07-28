@@ -407,7 +407,7 @@ body {
 .container4 {
 	margin: 0;
 	width: 100%;
-	height: 100%;
+	height: 40rem;
 
 	display: flex;
 	-webkit-background-size: cover;
@@ -463,6 +463,7 @@ body {
 }
 
 .testimonial-text {
+	padding: 10px;
 	font-size: 2.2rem;
 	font-weight: 500;
 	color: orange;
@@ -470,6 +471,7 @@ body {
 }
 
 .testimonial-text-template {
+	padding: 10px;
 	text-align: left;
 	background-image: url(images/GreyConcrete.png);
 	-webkit-background-size: cover;
@@ -480,11 +482,12 @@ body {
 	padding: inherit;
 	font-family: 'Roboto', sans-serif;
 }
-em {
+.testimonial-text-template p {
 	font-size: 1.1rem;
 	font-family: 'Roboto 700', sans-serif;
 	font-weight: 700px;
 }
+
 .container-fluid {
 	margin-right: auto;
 	margin-left: auto;
